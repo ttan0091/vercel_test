@@ -4,10 +4,14 @@ import homeImage from '../../../public/home.jpg'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Home',
+    title: 'Home',
 }
 export default function Page() {
-  return (
-    <Hero imageUrl={homeImage} altText={'Home'} title={'Professional Cloud Hosting'}  />
-  )
+    return (
+        <div>
+            <Hero imageUrl={homeImage} altText={'Home'} title={'Professional Cloud Hosting'} />
+
+        </div>
+
+    )
 }  

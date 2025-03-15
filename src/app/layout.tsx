@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ADLaM_Display } from "next/font/google";
 import "./globals.css";
-
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 const comforter = ADLaM_Display({subsets:['latin'],weight:'400'});
 
 export const metadata: Metadata = {
@@ -18,7 +18,9 @@ export default function RootLayout({
     return (
         <html lang="en" >
             <body className={comforter.className}>
-                {children}
+                <AntdRegistry>
+                    {children}
+                </AntdRegistry>
             </body>
         </html>
     );
