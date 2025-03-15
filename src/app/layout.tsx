@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { ABeeZee } from "next/font/google";
+import { ADLaM_Display } from "next/font/google";
 import "./globals.css";
 
-const comforter = ABeeZee({subsets:['latin'],weight:'400'});
+const comforter = ADLaM_Display({subsets:['latin'],weight:'400'});
 
 export const metadata: Metadata = {
     title: "Create Next App",
